@@ -1,1 +1,0 @@
-# tristan-tenyay-digital-cv
