@@ -1,4 +1,5 @@
 body {
+    scroll-behavior: smooth;
     font-family: arial sans-serif white;
     font-size: 18px;
     line-height: 2;
