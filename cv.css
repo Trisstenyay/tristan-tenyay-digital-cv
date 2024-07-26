@@ -9,6 +9,7 @@ body {
     border: 3px;
     box-shadow: 0 5px 30px 0 white inset, 0 5px 30px 0 white;
     border-style: solid; 
+    box-shadow: 0 5px 30px 0 white inset, 0 5px 30px 0 white;
     background-color: black; 
     }
      
@@ -22,6 +23,7 @@ body {
     
     .profile {
     border: 3px solid white;
+    box-shadow: 0 5px 20px 0 white inset, 0 5px 20px 0 white;;
     border-radius: 100%;
     box-shadow: 0 5px 20px 0 white inset, 0 5px 20px 0 white;
     height: 275px;
@@ -141,6 +143,26 @@ body {
     width: 15%;
     outline: none;
     }
+
+
+    textarea{
+    font-family: sans-serif;
+    outline: none;
+}
+
+
+
+::placeholder{
+    color: black;
+}
+
+
+
+.clear, .submit, .clear2, .submit2{
+    box-shadow: 0 5px 50px 0 white inset, 0 5px 50px 0 white;
+    cursor: pointer;
+}
+    
     
     
     
