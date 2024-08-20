@@ -186,5 +186,51 @@ body {
     
     
     
-     
+
+
+
+
+
+
+    @media (max-width: 1200px) {
+        html{
+            font-size: 55%;
+        }
+    }
+
+
+
+
+
+
+    @media (max-width: 430px) {
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        video{
+            height: 10%;
+            top: 50%;
+            left: 48%;
+            transform: translate(-50%, 50%);
+            width: 80%;
+        }
+        .ambition{
+            top: 55%;
+            right: 16%;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid white;
+            text-align: center;
+        }
+     }
+    
+    
+ 
     
