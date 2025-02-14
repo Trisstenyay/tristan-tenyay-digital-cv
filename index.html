@@ -7,20 +7,14 @@
     <title>My Digital CV</title>
 </head>
 
-
 <body>
    <header>
       <section>
            <div class="image-container">
-             <img class="profile" src="IMG_2702.JPG" alt="" id="profile"  width="120" height="180">   
+             <img class="profile" src="triss.JPG" alt="" id="profile"  width="120" height="180">   
              <img class="city" src="nyc.jpg" alt="" id="city"  width="120" height="180">
            </div>
       </section>
-
-
-          
-
-
 
       <section>
           <div class="name-container">
@@ -32,12 +26,6 @@
           </div>
       </section>
 
-
-
-
-
-      <section class="video">
-        <video src="smoke.mp4" autoplay muted></video>
         <h1 class="ambition">
           <span>A</span>
           <span>M</span>
@@ -59,8 +47,6 @@
       </section>
       <br>
  <hr>
-
-
       <section class="education">
         <h2>Education</h2>
         <ul>
@@ -73,13 +59,9 @@
       </section>
       <hr>
 
-
       <section class="tech/Web-Development">
         <h2>Tech/Web-Development</h2>
-
         <div class="tech-container">
-
-
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -95,8 +77,6 @@
             </ul>
           </section>
           <hr>
-
-
         <section class="tools-container">
             <table>
                 <h2>Tools</h2>
@@ -184,94 +164,64 @@
     <div class="contact">
         <h2>Contact Me</h2>
 
-
         <div class="form-container">
-            <form action="#">
-                <div class="text-input-container">
-                  <label for="name">Name:</label>
-                <input class="input-field" type="text"
-                       id="name"
-                       placeholder="Name"
-                       minlength=2 
-                       maxlength="10"
-                       required>
-                </div>
-                 
-
-                <div class="text-input-container">
-                  <label for="email">Email:</label>
-                  <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      placeholder="email"
-                      class="input-field">
-                </div>
-  
-    
-                    <div class="text-input-container">
-                      <label for="organization">Organization:</label>
-                      <input
-                          type="text"
-                          id="organization"
-                          name="organization"
-                          placeholder="company"
-                          class="input-field">
-                    </div>
-    
-
-                    <div class="text-input-container">
-                      <label for="role">Role:</label>
-                      <input
-                          type="text"
-                          id="role"
-                          name="role"
-                          placeholder="Algorithm Specialist"
-                          class="input-field"
-                      >
-                    </div>
+          <form action="#">
+            <!-- Text Inputs -->
+            <div class="text-input-container">
+              <label for="name">Name:</label>
+              <input class="input-field" type="text" id="name" placeholder="Name" minlength="2" maxlength="10" required>
+            </div>
         
-
-                    <div class="select-container">
-                      <label for="reason">Reason for Contact:</label>
-                      <select
-                          id="reason"
-                          name="reason"
-                      >
-                        <option value="job-offer">Job Offer</option>
-                        <option value="collaboration">Collaboration</option>
-                        <option value="feedback">Feedback</option>
-                      </select>
-                    </div>
+            <div class="text-input-container">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required placeholder="Email" class="input-field">
+            </div>
         
-                    
-                    <div class="button-container">
-                      <button class="clear" type="reset">Clear</button>
-                      <input class="submit" type="submit">
-                    </div>
-                  </form>
-                </div>
-              
-            
-                <div class="message">
-                 <label>
-                 <h3>When do you prefer to code?</h3>
-                 <input type="checkbox" name="Early morning"> Early Morning <br>
-                 <input type="checkbox" name="Mid Day"> Mid Day <br>
-                 <input type="checkbox" name="Night Time">Night Time <br>
-                 <input type="checkbox" name="Late Night">Late Night <br>
-                 </label>
-                </div>
-    
-
-                 <div class="button-container">
-                    <h3>Message:</h3>
-                    <textarea name="Message"placeholder=Message cols="30" rows="10" minlength="2" maxlength="500"></textarea>
-                    <br>
-                    <button class="clear2" type="reset">Clear</button>
-                    <input class="submit2" type="submit">
-                 </div>
+            <div class="text-input-container">
+              <label for="organization">Organization:</label>
+              <input type="text" id="organization" name="organization" placeholder="Company" class="input-field">
+            </div>
+        
+            <div class="text-input-container">
+              <label for="role">Role:</label>
+              <input type="text" id="role" name="role" placeholder="Algorithm Specialist" class="input-field">
+            </div>
+        
+            <!-- Select Dropdown -->
+            <div class="select-container">
+              <label for="reason">Reason for Contact:</label>
+              <select id="reason" name="reason">
+                <option value="job-offer">Job Offer</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="feedback">Feedback</option>
+              </select>
+            </div>
+        
+            <!-- Checkboxes Section -->
+            <div class="message">
+              <h3>When do you prefer to code?</h3>
+              <label>
+                <input type="checkbox" name="coding-time" value="Early morning"> Early Morning <br>
+                <input type="checkbox" name="coding-time" value="Mid Day"> Mid Day <br>
+                <input type="checkbox" name="coding-time" value="Night Time"> Night Time <br>
+                <input type="checkbox" name="coding-time" value="Late Night"> Late Night <br>
+              </label>
+            </div>
+        
+            <!-- Message Section -->
+            <div class="message-container">
+              <h3>Message:</h3>
+              <textarea name="message" placeholder="Message" cols="30" rows="10" minlength="2" maxlength="500"></textarea>
+            </div>
+        
+            <!-- Button Container -->
+            <div class="button-container">
+              <button class="clear" type="reset">Clear</button>
+              <input class="submit" type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+        
                
    </footer>
 </body>

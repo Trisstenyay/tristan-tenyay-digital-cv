@@ -1,1 +1,1 @@
-# tristans resume
+# Tristan Tenyay's Digital CV

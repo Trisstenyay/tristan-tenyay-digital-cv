@@ -9,8 +9,7 @@ body {
     border: 3px;
     box-shadow: 0 5px 30px 0 white inset, 0 5px 30px 0 white;
     border-style: solid; 
-    box-shadow: 0 5px 30px 0 white inset, 0 5px 30px 0 white;
-    background-color: black; 
+    background-color: #323946; 
     }
      
     
@@ -23,11 +22,10 @@ body {
     
     .profile {
     border: 3px solid white;
-    box-shadow: 0 5px 20px 0 white inset, 0 5px 20px 0 white;;
-    border-radius: 100%;
     box-shadow: 0 5px 20px 0 white inset, 0 5px 20px 0 white;
+    border-radius: 100%;
     height: 275px;
-    width: 200px;
+    width: 275px;
     }
     
     
@@ -36,7 +34,7 @@ body {
     border: 3px solid white;
     border-radius: 100%;
     height: 275px;
-    width: 200px;
+    width: 275px;
     position: absolute;
     left: 0;
     top: 0;
@@ -56,12 +54,12 @@ body {
     position: absolute;
     top: 37%;
     right: 40%;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 0.2em;
     }
     
     
-    
+
     .ambition span:nth-child(1){
         animation-delay: 1s;
     }
@@ -95,23 +93,11 @@ body {
     }
     
     h1 span {
-    opacity: 0;
-    display: inline block;
-    animation:ambition 1s linear forwards;
-    }
-    
-    
-    
-    video {
-    position: absolute;
-    object-fit: cover;
-    top: 25%;
-    right: 30%;
-    height: 300px;
-    }
-    
-    
-    
+      opacity: 0;
+      display: inline block;
+      animation:ambition 1s linear forwards;
+      }
+        
     @keyframes ambition {
         0%{
     opacity: 0;
@@ -135,102 +121,160 @@ body {
     
     .contact {
     text-align: center;
+    font-weight: bold;
     }
     
+
+    /* Make sure the form-container and text-input-container are styled properly */
+    .form-container {
+      width: 50%; /* Adjust width as needed */
+      max-width: 400px; /* Keep it aligned */
+      margin: 0 auto; /* Center the form */
+      padding: 10px;
+    }
     
+    /* Ensure proper spacing for form fields */
+    .text-input-container, 
+    .select-container, 
+    .message-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3px;
+    }
     
-    .input-field {
-    width: 15%;
-    outline: none;
+    label {
+      font-weight: bold;
+      margin-bottom: 5px; /* Space between label and input */
+    }
+    
+    .input-field, 
+    select, 
+    textarea {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #323946;
+      border-radius: 4px;
+      width: 100%; /* Ensure full width */
+      outline: none;
+      /* box-shadow: 0 5px 20px 0 white inset, 0 5px 20px 0 white; */
+    }
+
+    .input-field:focus {
+      box-shadow: 0 5px 50px 0 white inset, 0 5px 50px 0 white, 0 0 10px 2px #ffffff;
+      border: 1px solid #ffffff; /* Optional: Highlight the border on focus */
     }
 
 
-    textarea{
-    font-family: sans-serif;
-    outline: none;
+    
+    
+    /* Ensure select dropdown matches text inputs */
+    .select-container select {
+      height: 40px;
+    }
+    
+    /* Style checkboxes */
+    .message input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    
+    /* Fix message textarea width */
+    textarea {
+      font-family: sans-serif;
+      outline: none;
+      resize: vertical; /* Allows user to adjust height */
+    }
+
+    textarea:focus {
+      box-shadow: 0 5px 10px 0 white inset, 0 5px 10px 0 white, 0 0 10px 2px #ffffff;
+      border: 1px solid #ffffff; 
+    }
+    
+    /* Ensure placeholder text is black */
+    ::placeholder {
+      color: black;
+    }
+    
+    .clear, .submit, .clear2, .submit2 {
+      box-shadow: 0 5px 50px 0 white inset, 0 5px 50px 0 white;
+      cursor: pointer;
+      padding: 10px 10px; /* Increase padding for bigger buttons */
+      font-size: 15px; /* Increase font size */
+      border: none; /* Remove default borders */
+      border-radius: 6px; /* Make edges rounded */
+      width: 20%; /* Adjust width to fit within the button container */
+      text-align: center;
+      transition: all 0.3s ease-in-out; /* Add smooth hover effect */
+    }
+
+/* Adjust Background Colors */
+.clear, .clear2 {
+  background-color: #323946; /* Red for Clear */
+  color: white;
 }
 
-
-
-::placeholder{
-    color: black;
+.submit, .submit2 {
+  background-color: #323946; /* Blue for Submit */
+  color: white;
 }
 
+/* Hover Effects */
+.clear:hover, .clear2:hover {
+  background-color: #323946;
+}
 
+.submit:hover, .submit2:hover {
+  background-color: #323946;
+}
 
-.clear, .submit, .clear2, .submit2{
-    box-shadow: 0 5px 50px 0 white inset, 0 5px 50px 0 white;
-    cursor: pointer;
+/* Ensure Buttons Are Centered */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  gap: 15px; /* Space between buttons */
+  margin-top: 15px;
 }
     
+   
     
-    
-    
-    textarea{
-        font-family: sans-serif;
-        outline: none;
+/* General styles for larger screens */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
     }
-    
-    
-    
-    ::placeholder{
-        color: black;
+}
+
+  /* For devices between 431px and 768px (smaller tablets, larger phones) */
+  @media (max-width: 768px) {
+    .video {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
     }
-    
-    
-    
-    .clear, .submit, .clear2, .submit2{
-        box-shadow: 0 5px 50px 0 white inset, 0 5px 50px 0 white;
-        cursor: pointer;
+  
+    .ambition {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
     }
-    
-    
-    
-
-
-
-
-
-
-    @media (max-width: 1200px) {
-        html{
-            font-size: 55%;
-        }
+  }
+  
+/* For devices smaller than or equal to 430px (e.g., iPhone 14 Pro Max) */
+@media (max-width: 430px) {  
+    .ambition {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
     }
+  }
+
+  /* Ensure the body and html still don't cause horizontal overflow */
+  html, body {
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+  }
 
 
-
-
-
-
-    @media (max-width: 430px) {
-        section{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        video{
-            height: 10%;
-            top: 50%;
-            left: 48%;
-            transform: translate(-50%, 50%);
-            width: 80%;
-        }
-        .ambition{
-            top: 55%;
-            right: 16%;
-        }
-        table{
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td{
-            border: 1px solid white;
-            text-align: center;
-        }
-     }
-    
-    
- 
-    
