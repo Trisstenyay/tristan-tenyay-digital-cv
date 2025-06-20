@@ -1,24 +1,21 @@
 body {
     scroll-behavior: smooth;
-    font-family: arial sans-serif white;
+    font-family: arial sans-serif;
     font-size: 18px;
-    line-height: 2;
-    margin: 2rem;
+    line-height: 1;
+    margin: 4rem;
     padding: 2rem;
     color: white;
-    border: 3px;
+    border: 5px;
+    border-radius: 10px;
     box-shadow: 0 5px 30px 0 white inset, 0 5px 30px 0 white;
     border-style: solid; 
     background-color: #323946; 
     }
-     
-    
     
     .image-container {
     position: relative;
     }
-    
-    
     
     .profile {
     border: 3px solid white;
@@ -27,8 +24,6 @@ body {
     height: 275px;
     width: 275px;
     }
-    
-    
     
     .city {
     border: 3px solid white;
@@ -42,24 +37,19 @@ body {
     transition: 1.7s ease;
     }
     
-    
-    
     .city:hover {
     opacity: 1;
     }
-    
        
-    
     .ambition {
     position: absolute;
     top: 37%;
     right: 40%;
     font-size: 35px;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
     letter-spacing: 0.2em;
     }
     
-    
-
     .ambition span:nth-child(1){
         animation-delay: 1s;
     }
@@ -111,20 +101,62 @@ body {
           }
     }
     
-    
+    h2, h3 {
+    color: white;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+    letter-spacing: 2px;
+    }
+
+    section {
+    margin-bottom: 4rem;
+    }
+
+    .glow-divider {
+    height: 3px;
+    width: 95%;
+    margin: 2rem auto;
+    background: linear-gradient(to right, #ffffff11, #ffffffaa, #ffffff11);
+    box-shadow: 0 0 10px #ffffff44, 0 0 20px #ffffff33;
+    border-radius: 800px;
+    }
+
     
     a {
     color: white;
     }
     
-    
+    .experience li {
+      margin-bottom: 10px;
+    }
+
+    .skills li {
+      margin-bottom: 10px;
+    }
+
+    .projects li ul {
+    margin-bottom: 2rem; /* space between each project */
+    margin-top: 1rem;
+    }
+
+    .projects li ul li {
+    margin-bottom: 10px; /* tighter space for bullet point descriptions */
+    }
+
+    .project-links {
+      margin-bottom: 50px;
+      margin-left: 15px;
+    }
+
+    .education li {
+      margin-bottom: 10px;
+    }
     
     .contact {
     text-align: center;
     font-weight: bold;
     }
-    
-
+  
     /* Make sure the form-container and text-input-container are styled properly */
     .form-container {
       width: 50%; /* Adjust width as needed */
@@ -140,44 +172,48 @@ body {
       display: flex;
       flex-direction: column;
       margin-bottom: 3px;
+      margin-left: 100px;
+    }
+
+    .message-container h3 {
+      margin-right: 350px;
     }
     
     label {
       font-weight: bold;
+      margin-top: 20px;
       margin-bottom: 5px; /* Space between label and input */
+      margin-right: 350px;
     }
-    
+
     .input-field, 
     select, 
     textarea {
       padding: 8px;
       font-size: 16px;
-      border: 1px solid #323946;
-      border-radius: 4px;
-      width: 100%; /* Ensure full width */
+      border: 1px solid grey;
+      border-radius: 6px;
+      width: 60%; /* Ensure full width */
       outline: none;
-      /* box-shadow: 0 5px 20px 0 white inset, 0 5px 20px 0 white; */
+      background-color: #323946;
+      color: white;
+      transition: all 0.3s ease-in-out;
     }
 
-    .input-field:focus {
-      box-shadow: 0 5px 50px 0 white inset, 0 5px 50px 0 white, 0 0 10px 2px #ffffff;
-      border: 1px solid #ffffff; /* Optional: Highlight the border on focus */
+    .input-field:focus,
+    textarea:focus  {
+      border: 1px solid #ffffff; 
+      box-shadow: 0 5px 10px 0 white inset, 0 5px 10px 0 white, 0 0 10px 2px #ffffff;
     }
 
-
-    
-    
-    /* Ensure select dropdown matches text inputs */
     .select-container select {
       height: 40px;
     }
     
-    /* Style checkboxes */
     .message input[type="checkbox"] {
-      margin-right: 5px;
+      margin-right: 200px;
     }
-    
-    /* Fix message textarea width */
+
     textarea {
       font-family: sans-serif;
       outline: none;
@@ -189,92 +225,163 @@ body {
       border: 1px solid #ffffff; 
     }
     
-    /* Ensure placeholder text is black */
-    ::placeholder {
-      color: black;
-    }
+   ::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
     
-    .clear, .submit, .clear2, .submit2 {
-      box-shadow: 0 5px 50px 0 white inset, 0 5px 50px 0 white;
-      cursor: pointer;
-      padding: 10px 10px; /* Increase padding for bigger buttons */
-      font-size: 15px; /* Increase font size */
-      border: none; /* Remove default borders */
-      border-radius: 6px; /* Make edges rounded */
-      width: 20%; /* Adjust width to fit within the button container */
-      text-align: center;
-      transition: all 0.3s ease-in-out; /* Add smooth hover effect */
-    }
 
-/* Adjust Background Colors */
-.clear, .clear2 {
-  background-color: #323946; /* Red for Clear */
-  color: white;
-}
-
-.submit, .submit2 {
-  background-color: #323946; /* Blue for Submit */
-  color: white;
-}
-
-/* Hover Effects */
-.clear:hover, .clear2:hover {
-  background-color: #323946;
-}
-
-.submit:hover, .submit2:hover {
-  background-color: #323946;
-}
-
-/* Ensure Buttons Are Centered */
 .button-container {
   display: flex;
   justify-content: center; /* Center buttons */
   gap: 15px; /* Space between buttons */
-  margin-top: 15px;
+  margin-top: 30px;
+}
+
+.glow-button {
+  background-color: #323946;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.glow-button:hover {
+  box-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.4),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
 }
     
+/* Hover Glow Effect */
+  .clear:hover, .submit:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 25px rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+  }
    
-    
-/* General styles for larger screens */
-@media (max-width: 1200px) {
-    html {
-        font-size: 55%;
-    }
+ 
+
+  /* MOBILE STYLES */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ambition {
+    position: static;         /* Reset from absolute */
+    text-align: center;       /* Center the text */
+    font-size: 1.6rem;        /* Smaller font */
+    margin-top: 1rem;         /* Add space if needed */
+  }
+
+    .image-container {
+    margin-top: 50px; /* Adjust the value to how far down you want it */
+    margin-left: 20px;
+  }
+
+  .glow-box {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .image-container img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .message-container {
+  text-align: center;
+  }
+
+  .message-container h4,
+  .message-container h3,
+  .message-container ul {
+  font-size: 1.4rem;
+  margin-right: 140px;
+  }
+
+  h2, h3 {
+    font-size: 1.3rem;
+  }
+
+  .contact h2 {
+    font-size: 2.5rem;
+  }
+
+  .summary h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .skills h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .experience h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .education h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .projects strong {
+  text-align: center;  
+  margin-left: 35px;
+  font-size: 1rem;
+  }
+
+  .projects > ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  }
+
+  .projects ul ul {
+  list-style-type: disc !important;
+  padding-left: 2.2rem !important;
 }
 
-  /* For devices between 431px and 768px (smaller tablets, larger phones) */
-  @media (max-width: 768px) {
-    .video {
-      width: 100vw;
-      height: 100vh;
-      position: relative;
-      overflow: hidden;
-    }
-  
-    .ambition {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 2rem;
-    }
-  }
-  
-/* For devices smaller than or equal to 430px (e.g., iPhone 14 Pro Max) */
-@media (max-width: 430px) {  
-    .ambition {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 2rem;
-    }
+
+  .contact, .form-container, .projects, .summary, .skills, .experience {
+    padding: 10px;
   }
 
-  /* Ensure the body and html still don't cause horizontal overflow */
-  html, body {
-    overflow-x: hidden;  /* Prevent horizontal scrolling */
+  .form-container {
+    width: 90%;
+    max-width: none;
   }
 
+  .input-field,
+  textarea {
+    font-size: 14px;
+  }
 
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .glow-button {
+    width: 100%;
+  }
+}
