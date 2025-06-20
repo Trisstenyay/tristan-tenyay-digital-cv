@@ -121,6 +121,9 @@ body {
     border-radius: 800px;
     }
 
+    .name-container h1 {
+      font: 2rem;
+    }
     
     a {
     color: white;
@@ -155,6 +158,10 @@ body {
     .contact {
     text-align: center;
     font-weight: bold;
+    }
+
+    .contact h2 {
+      font-size: 2.5rem;
     }
   
     /* Make sure the form-container and text-input-container are styled properly */
@@ -281,9 +288,19 @@ body {
     margin-top: 1rem;         /* Add space if needed */
   }
 
-    .image-container {
-    margin-top: 50px; /* Adjust the value to how far down you want it */
-    margin-left: 20px;
+  .name-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  }
+
+  .information-container h3 {
+  text-align: center;
+  }
+
+  .image-container {
+  margin-top: 50px; /* Adjust the value to how far down you want it */
+  margin-left: 20px;
+  text-align: center;
   }
 
   .glow-box {
@@ -292,8 +309,9 @@ body {
   }
 
   .image-container img {
-    width: 140px;
-    height: 140px;
+    width: 250px;
+    height: 250px;
+    
   }
 
   .message-container {
